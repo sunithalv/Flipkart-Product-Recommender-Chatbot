@@ -2,6 +2,9 @@
 
 This project is a containerized Flask-based chatbot application that recommends Flipkart products using LLM-powered workflows. It is designed for deployment on Kubernetes (Minikube) and includes monitoring with Prometheus and Grafana.
 
+<img width="1287" height="878" alt="Flipkart+product+recommender+Workflow" src="https://github.com/user-attachments/assets/59642505-e96d-4b57-ab51-9d55f7483c16" />
+
+
 ## Features
 
 - Chatbot interface for product recommendations
