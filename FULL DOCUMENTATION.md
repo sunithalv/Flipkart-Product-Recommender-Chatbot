@@ -194,13 +194,15 @@ kubectl apply -f prometheus/prometheus-deployment.yaml
 
 kubectl apply -f grafana/grafana-deployment.yaml
 
+## Check if both prometheus and grafana are running
+kubectl get pods -n monitoring
+
 ## Check target health also..
 ## On IP:9090
 kubectl port-forward --address 0.0.0.0 svc/prometheus-service -n monitoring 9090:9090
 
 ## Username:Pass --> admin:admin
 kubectl port-forward --address 0.0.0.0 svc/grafana-service -n monitoring 3000:3000
-
 
 
 Configure Grafana
